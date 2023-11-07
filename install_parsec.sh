@@ -30,3 +30,21 @@ done
 
 # Check if any dependencies were missed and install them
 sudo apt-get install -f
+
+# Fix for PulseAudio config bug in some versions of Ubuntu
+[ ! -f /etc/alsa/conf.d/99-pulseaudio-default.conf ] && { [ -f /etc/alsa/conf.d/99-pulseaudio-default.conf.example ] && sudo mv /etc/alsa/conf.d/99-pulseaudio-default.conf.example /etc/alsa/conf.d/99-pulseaudio-default.conf || sudo tee /etc/alsa/conf.d/99-pulseaudio-default.conf.example > /dev/null <<'EOF'
+# Default to PulseAudio
+
+pcm.!default {
+    type pulse
+    hint {
+        show on
+        description "Default ALSA Output (currently PulseAudio Sound Server)"
+    }
+}
+
+ctl.!default {
+    type pulse
+}
+EOF
+}
