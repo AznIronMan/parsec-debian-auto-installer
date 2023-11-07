@@ -1,0 +1,53 @@
+# Ignore .deb files
+*.deb
+
+# Ignore various system files
+.DS_Store
+Thumbs.db
+
+# Ignore compiled/byte-compiled files
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+*.so
+*.swp
+*.swo
+
+# Ignore all log files
+*.log
+
+# Ignore temporary files that might be created by editors or the system
+*~
+.#*
+
+# Ignore executable files, you might want to comment this line if you're including executables
+*.exe
+*.dll
+*.bin
+
+# Ignore folder that might contain virtualenv or similar environments
+venv/
+env/
+
+# Ignore the build directory
+build/
+
+# Ignore gitignore and README template files, comment out if you have custom templates in your repo
+.gitignore-template
+README-template.md
+
+# Ignore script generated files
+*.out
+*.pid
+
+# Ignore archive files
+*.tar.gz
+*.zip
+*.rar
+
+# Ignore user-specific files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
