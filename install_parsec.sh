@@ -18,6 +18,11 @@ declare -A DEB_FILES=(
     ["libx264-163_0.163.3060+git5db6aa6-2build1_amd64.deb"]="http://archive.ubuntu.com/ubuntu/pool/universe/x/x264/libx264-163_0.163.3060+git5db6aa6-2build1_amd64.deb"
     ["libavcodec-extra58_4.4.1-3ubuntu5_amd64.deb"]="http://archive.ubuntu.com/ubuntu/pool/universe/f/ffmpeg/libavcodec-extra58_4.4.1-3ubuntu5_amd64.deb"
     ["parsec-linux.deb"]="https://builds.parsec.app/package/parsec-linux.deb"
+    ["libjpeg-turbo8-dev_2.0.3-0ubuntu1_amd64.deb"]="http://archive.ubuntu.com/ubuntu/pool/main/libj/libjpeg-turbo/libjpeg-turbo8-dev_2.0.3-0ubuntu1_amd64.deb"
+    ["libjpeg-turbo8_2.0.3-0ubuntu1_amd64.deb"]="http://archive.ubuntu.com/ubuntu/pool/main/libj/libjpeg-turbo/libjpeg-turbo8_2.0.3-0ubuntu1_amd64.deb"
+    ["libjpeg8_8c-2ubuntu8_amd64.deb"]="http://archive.ubuntu.com/ubuntu/pool/main/libj/libjpeg8-empty/libjpeg8_8c-2ubuntu8_amd64.deb"
+    ["libjpeg8-dev_8c-2ubuntu10_amd64.deb"]="http://archive.ubuntu.com/ubuntu/pool/main/libj/libjpeg8-empty/libjpeg8-dev_8c-2ubuntu8_amd64.deb"
+    
 )
 
 # Download and install .deb packages
